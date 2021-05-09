@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.tipografia{
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header{
+    margin-top: 70px;
+    margin-left: 200px;
+}
+
+#logo{
+    margin-left: -100px;
+}
+
+.menu_desktop{
+    display: flex;
+    float: right;
+    margin-right: 140px;
+    margin-top: 4px;
+}
+
+.menu_desktop li{
+    padding: 0 25px;
+    list-style: none;
+}
+
+.menu_desktop li a{
+    color: hsl(230, 29%, 20%);
+    text-decoration: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.menu_desktop li a:hover{
+    text-decoration: underline 1px;
+}
+
+.login{
+    margin-left: 50px;
+    opacity: .5;
+}
+
+.layer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(207, 33%, 95%);
+    width: 55%;
+    height: 470px;
+    z-index: -1;
+    border-bottom-left-radius: 65px;
+}
+.menu_mobile{
+    display: none;
+}
+
+.icon_hamburguer{
+    display: none;
+}
+
+.icon-menu, 
+.icon-close,
+.modal{
+    display: none;
+}
+
+/*image_computer*/
+
+.image_computer img{
+    max-width: 100%;
+    position: relative;
+    top: 105px;
+    left: 48.5%;
+}
+
+
+.porwerful{
+    margin-top: -320px;
+    margin-left: 100px;
+}
+
+.text_new{
+    display: flex;
+    max-width: 200%;
+}
+
+.text_new h1{
+    margin-left: 20px;
+    margin-top: 4px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 5px;
+    color: hsl(231, 7%, 65%);
+}
+
+.new{
+    font-size: 16px;
+    color: white;
+    background-color: hsl(230, 29%, 20%);
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+}
+
+.insights{
+    margin-top: 20px;
+    font-size: 60px;
+    color: hsl(230, 29%, 20%);
+    line-height: 60px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.project{
+    max-width: 200%;
+    margin-top: 30px;
+    color: hsl(230, 11%, 40%);
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+}
+
+.buttons{
+    display: flex;
+    margin-top: 50px;
+}
+
+.buttons input{
+    padding: 15px 25px;
+    border: none;
+    background-color: hsl(0, 100%, 68%);
+    border-radius: 5px;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.buttons input:hover{
+    opacity: .6;
+}
+
+.buttons p{
+    margin-left: 15px;
+    margin-top: 15px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 17px;
+    letter-spacing: 5px;
+    color: hsl(230, 11%, 40%);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 950px) {
+    .menu_desktop{
+        display: none;
+    }
+
+    .menu_mobile{
+        list-style: none;
+        position: absolute;
+        left: 0%;
+        top: 15%;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        padding-top: 20px;
+        border-radius: 5px;
+        min-height: 250px;
+        box-shadow: -5px 5px 20px hsl(231, 7%, 65%);
+        transition: .5s;
+        display: none;
+        z-index: 1000;
+    }
+
+    .modal-display{
+        display: block;
+        transform: translate(0);
+    }
+
+    .menu_mobile li{
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .menu_mobile li a{
+        color: hsl(230, 29%, 20%);
+        text-decoration: none;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .menu_mobile li a:hover{
+        text-decoration: underline 1px;
+    }
+
+    .login{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .separator{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10px;
+        border-top: 1px solid hsl(231, 7%, 65%);
+    }
+
+    #logo{
+        position: absolute;
+        top: 30px;
+        left: 10%;
+        margin-left: 0;
+    }
+
+    .display-block{
+        display: block !important;
+    }
+
+    .icon-menu,
+    .icon-close{
+        display: none;
+        position: absolute;
+        left: 85%;
+        top: 6.5%;
+    }
+
+    /*image*/
+
+    .image_computer img{
+        position: relative;
+        left: 0;
+    }
+
+    /*powerful*/
+
+    .porwerful{
+        margin-top: 0;
+    }
+
+    .insights{
+        margin-top: 200px;
+    }
+
+    .text_new{
+        position: absolute;
+        left: 10%;
+        margin-top: -75px;
+    }
+
+    .insights{
+        font-size: 35px;
+        line-height: 35px;
+        position: relative;
+        top: -35px;
+        margin-left: -60px;
+    }
+
+    .project{
+        width: 105%;
+        margin-left: -60px;
+        position: relative;
+        top: -30px;
+    }
+
+    .buttons{
+        margin-top: 0;
+        margin-left: -58px;
+    }
+
+    .buttons input{
+        padding: 15px;
+    }
+
+    .buttons p{
+        margin-top: 5px;
+    }
+}
